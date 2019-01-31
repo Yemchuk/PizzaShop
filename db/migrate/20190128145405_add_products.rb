@@ -19,7 +19,7 @@ class AddProducts < ActiveRecord::Migration[5.2]
   		:is_spicy => true,	
   		:is_veg => false, 
   		:is_best_offer => false, 
-  		:path_to_image => '/images/pepperoni.jpeg'
+  		:path_to_image => '/images/pepperoni0.jpeg'
   	})
 
 	Product.create ({
