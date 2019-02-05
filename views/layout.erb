@@ -22,7 +22,7 @@
 		<div class="container">
 
 			<!-- Static navbar -->
-			<nav class="navbar navbar-default" role="navigation">
+			<nav class="navbar navbar-default " role="navigation">
 			  <div class="navbar-header">
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 			      <span class="sr-only">Toggle navigation</span>
@@ -40,7 +40,10 @@
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
 			    	<li>
-			    		<a href="#">Cart (...)</a>
+			    		<form action="/cart" method="post">
+			    			<input type="text" name="orders">
+			    			<input type="submit" class="btn btn-primary btn-lg" value="Cart (...)" />
+			    		</form>
 			    	</li>
 			    </ul>
 			  </div><!--/.nav-collapse -->
