@@ -23,7 +23,7 @@ class AddProducts < ActiveRecord::Migration[5.2]
   	})
 
 	Product.create ({
-		:title => 'Hawaiian', 
+		:title => 'Vegetarian', 
 		:description => 'This is Vegetarian pizza', 
 		:price => 400, 
 		:size => 30, 
