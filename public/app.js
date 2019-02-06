@@ -18,6 +18,7 @@ function add_to_cart(id)
 
 	update_orders_input();
 	update_orders_button()
+	
 	// for (var i = 0; i < localStorage.length; i++){
 	// 	console.log(localStorage.key( i ) + "=[" + localStorage.getItem(localStorage.key( i )) + "]");
 	// }
