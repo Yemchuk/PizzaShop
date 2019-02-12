@@ -10,6 +10,9 @@ class Product < ActiveRecord::Base
 end
 
 class Order < ActiveRecord::Base
+	validates :name, presence: true
+	validates :phone, presence: true
+	validates :address, presence: true
 end
 
 
@@ -52,5 +55,10 @@ end
 
 post '/place_order' do
 	@o = Order.create params[:order]
-	erb "Thank you!"
+	if @o.save
+		erb "Thank you! Yout order has been placed!"
+	else
+		@error = @o.errors.full_messages.first
+		erb "Error"
+	end
 end

@@ -32,7 +32,7 @@
 
 <form action="/place_order" method="POST">
 
-	<input type="text" name="order[orders_input]" value="<%= @orders_input %>">
+	<input type="hidden" name="order[orders_input]" value="<%= @orders_input %>">
 
   	<div class="form-group" id="aaa">
 	    <label>Name</label>
