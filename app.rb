@@ -15,6 +15,9 @@ class Order < ActiveRecord::Base
 	validates :address, presence: true
 end
 
+before do
+	@order = Order.new
+end
 
 get '/' do
 	@products = Product.all
@@ -26,12 +29,11 @@ get '/about' do
 end
 
 get '/admin' do
+	@order = Order.order "created_at DESC"
 	erb :admin
 end
 
-before do
-	@order = Order.new
-end
+
 
 post '/cart' do
 
