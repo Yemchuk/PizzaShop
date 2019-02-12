@@ -1,12 +1,3 @@
-	
-function something()
-{
-	var x = window.localStorage.getItem('bbb');
-	x = x * 1 + 1; // x = x + 1
-	window.localStorage.setItem('bbb', x);
-
-	alert(x);
-}
 
 function add_to_cart(id)
 {
@@ -37,7 +28,11 @@ function update_orders_button() {
 
 function clear_cart()
 {
-	localStorage.clear();
+	window.localStorage.clear();
+	update_orders_input();
+	update_orders_button();
+	$('#cart').text('Your cart is now empty');
+	return false;
 }
 
 function cart_get_numbers_of_items(){

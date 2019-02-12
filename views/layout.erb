@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sinatra + Twitter Bootstrap</title>
+		<title>PizzaShop</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/vendor/app.css" rel="stylesheet">
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="/vendor/jquery-1.9.1.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -37,12 +39,13 @@
 			      <li><a href="/about">About</a></li>
 			      <li><a href="/something">Something</a></li>
 			      <li><a href="/contacts">Contacts</a></li>
+			      <li><a href="/admin">admin</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
 			    	<li>
 			    		<form action="/cart" method="post">
 			    			<input id="orders_input" type="hidden" name="orders">
-			    			<input id="orders_button" type="submit" class="btn btn-primary btn-lg" value="Cart (...)" />
+			    			<input id="orders_button" type="submit" value="" />
 			    		</form>
 			    	</li>
 			    </ul>
