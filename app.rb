@@ -56,7 +56,7 @@ end
 post '/place_order' do
 	@o = Order.create params[:order]
 	if @o.save
-		erb "Thank you! Yout order has been placed!"
+		erb :order_placed
 	else
 		@error = @o.errors.full_messages.first
 		erb "Error"
